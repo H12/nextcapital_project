@@ -1,12 +1,61 @@
 <!DOCTYPE html>
 
 <html>
-	<head>
-		To do or not to do.
-	</head>
-	<body>
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sit amet ultrices massa. Sed efficitur blandit tellus, non aliquet nunc. Aenean sit amet efficitur dui. Fusce nulla diam, varius sed neque sed, ornare rhoncus felis. Duis pellentesque, nunc et ultrices consectetur, ligula est aliquam neque, id faucibus orci felis ac magna. Etiam eget porttitor neque. Maecenas nec molestie dolor, in blandit diam. Nullam porta ex a tortor malesuada, nec venenatis ex pulvinar. Duis placerat risus eget felis tempus, vel laoreet libero ullamcorper. Phasellus eget porttitor magna. Donec sit amet nulla id magna lacinia mollis eget at purus.
-		</p>
-	</body>
-<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+        <title>To do or not to do.</title>
+    </head>
+    <body id="todo-page">
+        <div id="login-container">
+            <form id='login-form'>
+                <input type='text' id='email' placeholder='Email'>
+                <input type='password' id='password' placeholder='Password'>
+                <button class="btn" id='login'>Login</button>
+            </form>
+        </div>
+
+        <div id="register-container">
+            <form id='register-form'>
+                <input type='text' id='reg-email' placeholder='Email'>
+                <input type='password' id='reg-password' placeholder='Password'>
+                <button class="btn" id='register'>Register</button>
+            </form>
+        </div>
+
+        <div class="container">
+            <div class="header">
+                <button class="btn" id="create">Create</button>
+            </div>
+
+            <div id="second-section-scroll-list">
+                <ul class="scroll-list"></ul>
+            </div>
+
+            <div id="second-section-content">
+                <div id="todo-card">
+                    <p id="todo-body" contenteditable="false">
+                        You must either <a id="login-link" href="#">login</a> or <a id="register-link" href="#">register</a> for a new account in order to use this app.
+                    </p>
+                        <span title="Move To-Do Up">
+                            <button class="icon" id="move-up">&#8593;</button>
+                        </span>
+                        <span title="Move To-Do Down">
+                            <button class="icon" id="move-down">&#8595;</button>
+                        </span>
+                        <span title="Mark To-Do as Complete">
+                            <button class="icon" id="complete">&#10003;</button>
+                        </span>
+                    <button class="btn" id="save">Save</button>
+                </div>
+            </div>
+
+            <div class="footer">
+
+            </div>
+        </div>
+
+        <script src='client/js/jquery-1.11.1.min.js'></script>
+        <script src='client/js/todo.client.js'></script>
+        <script src="assets/js/script.js"></script>
+    </body>
+</html>
