@@ -9,6 +9,9 @@ Known Issues
 3) Spacing on the divs goes a bit wonky when the window is sized smaller
 	-Can be fixed with better CSS
 
+4) App doesn't work properly in https on github page
+	-Unsure how to address
+
 Things to Improve
 --------------------------------
 1) Error handling across the board
