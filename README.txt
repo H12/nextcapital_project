@@ -6,6 +6,9 @@ Known Issues
 2) Get "Error: 0" when attempting to login for the first time on new browser, but no error on second attempt
 	-Unknown cause, unsure how to address
 
+3) Spacing on the divs goes a bit wonky when the window is sized smaller
+	-Can be fixed with better CSS
+
 Things to Improve
 --------------------------------
 1) Error handling across the board
